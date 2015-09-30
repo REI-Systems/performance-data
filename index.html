@@ -41,7 +41,7 @@
             // draws it.
             function drawChart() {
 
-                var queryString = encodeURIComponent('SELECT E, D LIMIT 5 OFFSET 0');
+                var queryString = encodeURIComponent('SELECT E, D LIMIT 10 OFFSET 0');
 
                 var query = new google.visualization.Query(
                     'https://docs.google.com/spreadsheets/d/1xoA6sfohSGhKr1U1og7_FL2QBuPycGNHJzX8UbpKZJs/gviz/tq?gid=0&headers=1&tq=' + queryString);
@@ -75,6 +75,7 @@
                 <p>Lots of dashboards to come.</p>
                 <!--Div that will hold the pie chart-->
                 <div id="chart_div"></div>
+                <p>Be bold take this <a href="https://docs.google.com/forms/d/1FQpIUuzzohIenNfk1tc1H9dyqTEZxFCKPIA5sLmNYI8/viewform">survey</a></p>
             </section>
 
             <aside id="sidebar">
@@ -89,7 +90,6 @@
 
                 <p class="repo-owner">
                     <a href="https://github.com/REI-Systems/performance-data"></a> is maintained by <a href="https://github.com/REI-Systems">REI-Systems</a>.</p>
-
 
             </aside>
         </div>
