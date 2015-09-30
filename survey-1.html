@@ -17,10 +17,11 @@
         // draws it.
         function drawChart() {
 
-            var queryString = encodeURIComponent('SELECT A, H, O, Q, R, U LIMIT 5 OFFSET 8');
+            var queryString = encodeURIComponent('SELECT E, D LIMIT 5 OFFSET 0');
 
             var query = new google.visualization.Query(
-                'https://docs.google.com/spreadsheets/d/1XWJLkAwch5GXAt_7zOFDcg8Wm8Xv29_8PWuuW15qmAE/gviz/tq?gid=0&headers=1&tq=' + queryString);
+                 'https://docs.google.com/spreadsheets/d/1xoA6sfohSGhKr1U1og7_FL2QBuPycGNHJzX8UbpKZJs/gviz/tq?gid=0&headers=1&tq='+ queryString);
+                //'https://docs.google.com/spreadsheets/d/1XWJLkAwch5GXAt_7zOFDcg8Wm8Xv29_8PWuuW15qmAE/gviz/tq?gid=0&headers=1&tq='
             query.send(handleQueryResponse);
         }
 
